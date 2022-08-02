@@ -16,6 +16,7 @@ $new_users = Import-csv C:\Scripts\ADScripts\ADUsers_Import.csv
 
 #Loop through each row of user details in new user csv
 foreach ($user in $new_users) {
+	
 	#Read user data from each field and assign data to set variable
 	$firstname = $user.firstname
 	$lastname = $user.lastname
